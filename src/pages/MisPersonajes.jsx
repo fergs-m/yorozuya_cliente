@@ -28,7 +28,7 @@ function MisPersonajes() {
           tu lista de creaciones personalízalos como desees. Para crear un nuevo
           personaje solo debes hacer click en
           <Link to={"/nuevoPersonaje"} className="mispersonajes__link">
-            Crear mi personaje
+            -Crear mi personaje-
           </Link>
           .
         </p>
