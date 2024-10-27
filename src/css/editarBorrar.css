@@ -1,0 +1,185 @@
+/*Este CSS contiene el estilo de la página de editar y borrar personajes*/
+@font-face {
+  font-family: "letraLogo";
+  src: url("./font/julee.ttf");
+}
+:root {
+  /*Color del texto de página*/
+  --colorTexto: #192d3d;
+  /*Color del fondo de página*/
+  --colorfondo: #edf7ff;
+  --azul: #156bbc;
+  --rojo: #d51a26;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--colorfondo);
+  font-family: "letraPoppins";
+  color: var(--colorTexto);
+}
+
+/*CONTEENDOR BOTONES BORRAR Y EDITAR*/
+.miPersonaje__botonesDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+}
+.misPersonajes__boton {
+  background-color: var(--colorfondo);
+  color: var(--colorTexto);
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--rojo);
+  border-radius: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.misPersonajes__boton:hover {
+  background-color: var(--rojo);
+  color: var(--colorfondo);
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.4);
+}
+.mipersonaje__botonLink {
+  text-decoration: none;
+  color: var(--colorTexto);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.mipersonaje__botonLink:hover {
+  color: var(--colorfondo);
+}
+
+/*EDITAR PERSONAJES*/
+.formEditar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.formEditar__titulo {
+  font-family: "letraLogo";
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 450px) {
+  .formEditar__titulo {
+    font-size: 2.2rem;
+  }
+}
+.formEditar__parrafo {
+  margin: 0.6rem 0 2rem 0;
+  text-align: center;
+  width: 80%;
+}
+.formEditar__contenedor {
+  padding: 2.5rem;
+  background-color: var(--rojo);
+  color: var(--colorfondo);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 14px var(--colorTexto);
+  margin: 0 0 2rem 0;
+  width: 30%;
+}
+@media screen and (max-width: 570px) {
+  .formEditar__contenedor {
+    padding: 2rem 0;
+    width: 70%;
+  }
+}
+.formEditar__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 650px) {
+  .formEditar__formulario {
+    align-items: center;
+  }
+}
+.formEditar__submit {
+  background-color: var(--colorfondo);
+  color: var(--colorTexto);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.formEditar__submit:hover {
+  background-color: var(--colorTexto);
+  color: var(--colorfondo);
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.2);
+}
+
+/*BORRAR PERSONAJE*/
+.borrar {
+  background-image: url("/manga.webp");
+  background-repeat: repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 430px) {
+  .borrar {
+    background-image: url("/otro-manga.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.borrar__contenedor {
+  background-color: var(--colorfondo);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 660px) {
+  .borrar__contenedor {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .borrar__contenedor {
+    padding: 1.2rem 1rem;
+    width: 70%;
+  }
+}
+.borrar__titulo {
+  color: var(--colorTexto);
+  text-align: center;
+}
+.borrar__gif {
+  width: 20rem;
+}
+@media screen and (max-width: 470px) {
+  .borrar__gif {
+    width: 14rem;
+  }
+}
+.borrar__botones {
+  margin: 1rem 0 0 0;
+}
+.borrar__boton {
+  margin: 0 2rem 0 0;
+  padding: 10px 20px;
+  background-color: var(--colorfondo);
+  color: var(--colorTexto);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.borrar__boton:hover {
+  background-color: var(--rojo);
+  color: var(--colorfondo);
+}

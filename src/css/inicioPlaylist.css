@@ -1,0 +1,160 @@
+/*Este CSS contiene el estilo de la página de inicio que tiene el acordeón y la página playlist*/
+
+@font-face {
+  font-family: "letraLogo";
+  src: url("./font/julee.ttf");
+}
+:root {
+  /*Color del texto de página*/
+  --colorTexto: #192d3d;
+  /*Color del fondo de página*/
+  --colorfondo: #edf7ff;
+  --azul: #156bbc;
+  --rojo: #d51a26;
+}
+
+/*INICIO*/
+.inicio {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+@media screen and (max-width: 720px) {
+  .inicio {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.inicioContenedor {
+  width: 50%;
+}
+
+@media screen and (max-width: 430px) {
+  .inicioContenedor {
+    width: 70%;
+  }
+}
+
+.inicioImagen__img {
+  width: 20rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 440px) {
+  .inicioImagen__img {
+    width: 16rem;
+  }
+}
+
+.inicioContenedor__item {
+  background-color: var(--rojo);
+  color: var(--colorfondo);
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+
+.inicioContenedor__titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.inicioContenedor__mas {
+  transition: 0.4s;
+  font-size: 1.5rem;
+}
+
+.inicioContenedor__parrafo {
+  padding: 0 0 0.3rem 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+/*Clase para mostrar parrafos */
+.mostrar {
+  height: auto;
+  max-height: 30rem;
+  animation: fadeParrafos 1s ease-in-out;
+}
+
+/*Clase para rotar signo + */
+.rotar {
+  transform: rotate(45deg);
+}
+
+.inicioInico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inicioInico__titulo {
+  font-family: "letraLogo";
+  font-size: 3rem;
+}
+@media screen and (max-width: 630px) {
+  .inicioInico__titulo {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .inicioInico__titulo {
+    width: 80%;
+  }
+}
+.inicioInico__parrafo {
+  width: 80%;
+  text-align: center;
+}
+
+/*PLAYLIST*/
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 0 0;
+  gap: 2rem;
+}
+
+.playlist__titulo {
+  margin: 0;
+  font-family: "letraLogo";
+  font-size: 2.5rem;
+}
+
+.playlist__parrafo {
+  width: 60%;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .playlist__parrafo {
+    width: 80%;
+  }
+}
+
+.playlist__video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.playlist__video iframe {
+  position: absolute;
+  top: 0;
+  left: 19%;
+  width: 70%;
+  height: 70%;
+}
+
+@media screen and (max-width: 430px) {
+  .playlist__video iframe {
+    left: 16%;
+  }
+}

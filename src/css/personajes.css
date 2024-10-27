@@ -1,0 +1,211 @@
+/*Este CSS contiene el estilo de:
+- Personajes
+- Mis personajes
+- Crear personajes
+*/
+
+@font-face {
+  font-family: "letraPoppins";
+  src: url("./font/poppins.ttf");
+}
+
+@font-face {
+  font-family: "letraLogo";
+  src: url("./font/julee.ttf");
+}
+
+:root {
+  /*Color del texto de página*/
+  --colorTexto: #192d3d;
+  /*Color del fondo de página*/
+  --colorfondo: #edf7ff;
+  --azul: #156bbc;
+  --rojo: #d51a26;
+}
+
+/* TODOS LOS PERSONAJES*/
+
+.todosPersonajes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todosPersonajes__contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: 0 0 2rem 0;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .todosPersonajes__contenedor {
+    grid-template-columns: 1fr;
+  }
+}
+
+.todosPersonajes__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 6px double var(--rojo);
+}
+
+.todosPersonajes__titulo {
+  font-family: "letraLogo";
+  font-size: 3rem;
+}
+
+.todosPersonajes__parrafo {
+  margin: 0 0 1.5rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .todosPersonajes__parrafo {
+    width: 80%;
+  }
+}
+
+.todosPersonajes__info {
+  width: 90%;
+}
+
+span {
+  font-weight: bold;
+}
+
+/*MIS PERSONAJES*/
+.misPersonajes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mispersonajes__titulo {
+  font-family: "letraLogo";
+  font-size: 2.5rem;
+}
+
+.mispersonajes__parrafo {
+  width: 90%;
+}
+
+.mispersonajes__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--azul);
+}
+
+.mispersonajes__link:hover {
+  text-shadow: 3px 3px 4px rgba(25, 45, 61, 0.6);
+}
+
+.misPersonajes__conteendor {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 70%;
+  margin: 1rem 0 2rem 0;
+}
+
+@media screen and (max-width: 550px) {
+  .misPersonajes__conteendor {
+    width: 90%;
+  }
+}
+
+.misPersonajes__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 6px double var(--rojo);
+}
+
+.misPersonajes__info {
+  width: 90%;
+}
+
+/*CREAR PERSONAJES*/
+.formCrear {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.formCrear__contenedor {
+  padding: 2.5rem;
+  background-color: var(--rojo);
+  color: var(--colorfondo);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 14px var(--colorTexto);
+  width: 30%;
+}
+
+@media screen and (max-width: 570px) {
+  .formCrear__contenedor {
+    padding: 2rem 0;
+    width: 70%;
+  }
+}
+.formCrear__titulo {
+  font-family: "letraLogo";
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 450px) {
+  .formCrear__titulo {
+    font-size: 2.2rem;
+  }
+}
+.formCrear__parrafo {
+  margin: 0.6rem 0 2rem 0;
+  text-align: center;
+  width: 80%;
+}
+.formCrear__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 650px) {
+  .formCrear__formulario {
+    align-items: center;
+  }
+}
+label {
+  font-weight: bold;
+}
+textarea {
+  resize: none;
+  height: 5rem;
+}
+@media screen and (max-width: 450px) {
+  textarea {
+    height: 4rem;
+    width: 12rem;
+  }
+}
+input {
+  font-family: "letraPoppins";
+}
+
+.formCrear__submit {
+  background-color: var(--colorfondo);
+  color: var(--colorTexto);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.formCrear__submit:hover {
+  background-color: var(--colorTexto);
+  color: var(--colorfondo);
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.2);
+}

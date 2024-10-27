@@ -1,0 +1,122 @@
+/*Este CSS contiene el estilo de la página de Login y Logout*/
+
+:root {
+  /*Color del texto de página*/
+  --colorTexto: #192d3d;
+  /*Color del fondo de página*/
+  --colorfondo: #edf7ff;
+  --azul: #156bbc;
+  --rojo: #d51a26;
+}
+
+/*LOGIN*/
+
+.formulario {
+  background-image: url("/manga.webp");
+  background-repeat: repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 430px) {
+  .formulario {
+    background-image: url("/otro-manga.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.formulario__contenedor {
+  background-color: var(--colorfondo);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 3rem;
+}
+
+.formulario__boton {
+  padding: 10px 20px;
+  background-color: var(--colorfondo);
+  color: var(--colorTexto);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0 0 0;
+}
+
+.formulario__boton:hover {
+  background-color: var(--rojo);
+  color: var(--colorfondo);
+}
+
+.formulario__error {
+  font-size: 0.8rem;
+}
+
+/*LOGOUT*/
+.logout {
+  background-image: url("/manga.webp");
+  background-repeat: repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 430px) {
+  .logout {
+    background-image: url("/otro-manga.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.logout__contenedor {
+  background-color: var(--colorfondo);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 580px) {
+  .logout__contenedor {
+    padding: 1.2rem 1rem;
+    width: 80%;
+  }
+}
+
+.logout__titulo {
+  color: var(--colorTexto);
+}
+.logout__gif {
+  width: 20rem;
+}
+@media screen and (max-width: 380px) {
+  .logout__gif {
+    width: 16rem;
+  }
+}
+.logout__botones {
+  margin: 1rem 0 0 0;
+}
+.logout__boton {
+  margin: 0 2rem 0 0;
+  padding: 10px 20px;
+  background-color: var(--colorfondo);
+  color: var(--colorTexto);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.logout__boton:hover {
+  background-color: var(--rojo);
+  color: var(--colorfondo);
+}

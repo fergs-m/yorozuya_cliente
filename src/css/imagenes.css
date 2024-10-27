@@ -1,0 +1,92 @@
+/*Este css contiene el estilo de la página de imagenes*/
+
+@font-face {
+    font-family: 'letraLogo';
+    src: url('./font/julee.ttf')
+}
+
+:root {
+
+    /*Color del texto de página*/
+    --colorTexto: #192D3D;
+    /*Color del fondo de página*/
+    --colorfondo: #EDF7FF;
+    --azul: #156BBC;
+    --rojo: #D51A26;
+}
+
+.todosPersonajes__link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.todosPersonajes__link:hover {
+    text-shadow: 3px 3px 4px rgba(25, 45, 61, 0.6);
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.imagenes__titulo {
+    font-family: 'letraLogo';
+    font-size: 3rem;
+    text-align: center;
+}
+
+.imagenes__parrafo {
+    width: 80%;
+}
+
+.imagenes__contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 1rem 0 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .imagenes__contenedor {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .imagenes__contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+.imagenes__contenedorImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px double var(--rojo);
+    padding: 2rem;
+}
+
+.imagenes__img {
+    width: 19rem;
+}
+
+@media screen and (max-width: 850px) {
+    .imagenes__img {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imagenes__img {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .imagenes__img {
+        width: 14rem;
+    }
+}
