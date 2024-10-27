@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta es la carpeta cliente que contiene todas las configuraciones del front end de mi página web Yorozuya-Wiki, la cual presento como mi proyecto final del modulo Fullstack en CEI.
+https://yorozuyacliente-nwnn3izx0-fergs-ms-projects.vercel.app/
