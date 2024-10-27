@@ -8,12 +8,12 @@
 /*Definición tipografía*/
 @font-face {
   font-family: "letraPoppins";
-  src: url("./font/poppins.ttf");
+  src: url("/font/poppins.ttf");
 }
 
 @font-face {
   font-family: "letraLogo";
-  src: url("./font/julee.ttf");
+  src: url("/font/julee.ttf");
 }
 
 :root {
