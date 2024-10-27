@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'letraLogo';
-    src: url('./font/julee.ttf')
+    src: url('/font/julee.ttf')
 }
 
 :root {
