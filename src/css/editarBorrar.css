@@ -1,7 +1,7 @@
 /*Este CSS contiene el estilo de la página de editar y borrar personajes*/
 @font-face {
   font-family: "letraLogo";
-  src: url("./font/julee.ttf");
+  src: url("/font/julee.ttf");
 }
 :root {
   /*Color del texto de página*/
